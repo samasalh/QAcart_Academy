@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 
 public class InfoTest {
     @Test
-    public void should_beabletoGetCoursesInfo(){
+    public void should_be_able_to_Get_CoursesInfo(){
         given()
                 .baseUri("https://todo.qacart.com").header("type","WEB").header("language","NONE")
                 .when().get("/api/v1/info/courses")
@@ -17,7 +17,7 @@ public class InfoTest {
 
     }
     @Test
-    public void should_beabletoGetLeccturesInfo(){
+    public void should_be_able_to_Get_LeccturesInfo(){
         given()
                 .baseUri("https://todo.qacart.com").queryParams("mode","VIDEO","type","PAID")
                 .when().get("/api/v1/info/lectures")
